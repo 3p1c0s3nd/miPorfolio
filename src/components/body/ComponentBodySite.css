@@ -1,0 +1,13 @@
+.content__body__principal{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+    color:white;
+    margin-top: 15vh;
+}
+
+.content__img{
+   
+    border-radius: 80%;
+}

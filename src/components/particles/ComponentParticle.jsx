@@ -37,41 +37,46 @@ const ComponentParticle = () => {
           detectsOn: "window",
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
               enable: true,
               mode: "repulse",
             },
+            resize: true,
           },
           modes: {
             push: {
               particles_nb: 4,
+              quantity: 90,
             },
             repulse: {
-              distance: 100,
+              distance: 200,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff", // Color de las partículas (blanco)
+            value: "#e68e2e", // Color de las partículas (blanco)
           },
           links: {
-            color: "#ffffff",
+            color: "#f5d393",
             distance: 150,
             enable: true,
-            opacity: 0.7,
+            opacity: 0.5,
             width: 1,
+          },
+          collisions: {
+            enable: true,
           },
           move: {
             direction: "none",
             enable: true,
-            outMode: "out",
+            outMode: {default:"bounce"},
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -88,7 +93,7 @@ const ComponentParticle = () => {
             type: "circle",
           },
           size: {
-            random: true,
+            min: 1,
             value: 5,
           },
         },

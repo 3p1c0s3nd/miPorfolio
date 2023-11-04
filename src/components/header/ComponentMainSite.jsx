@@ -10,7 +10,13 @@ const ComponentMainSite = () =>{
 
     return(
         <div className="menu">
-           {renderMenu}
+            <div className="menu__logo text-left mt-9">Logo</div>
+            <div>{renderMenu}</div>
+           <div className="flex gap-4 mt-9">
+               <p>Twitter</p>
+               <p>LinkenIn</p>
+               <p>Github</p>
+           </div>
         </div>
     )
 }

@@ -1,0 +1,21 @@
+
+*{
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+    color:white;
+}
+
+.menu__logo{
+    display: flex;
+    max-width: 100%;
+    width: 10vw;
+    text-align: left;
+}
+
+
