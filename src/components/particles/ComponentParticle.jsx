@@ -24,12 +24,12 @@ const ComponentParticle = () => {
           zIndex: -1,
         },
         background: {
-          image: "url('/assets/fondo.png')", // Ruta a la imagen de fondo
+          //image: "url('/assets/fondo.png')", // Ruta a la imagen de fondo
           position: "50% 50%", // Posición del fondo
           size: "110% 100%",
           repeat: "repeat", // Evitar repetición
           color: {
-            value: "#000000", // Color de fondo negro
+            value: "#FFFFFF", // Color de fondo negro
           },
         },
         fpsLimit: 60,
@@ -59,10 +59,10 @@ const ComponentParticle = () => {
         },
         particles: {
           color: {
-            value: "#e68e2e", // Color de las partículas (blanco)
+            value: "#000", // Color de las partículas (blanco)
           },
           links: {
-            color: "#f5d393",
+            color: "#0f0",
             distance: 150,
             enable: true,
             opacity: 0.5,

@@ -3,11 +3,21 @@
     justify-content: space-around;
     max-width: 100%;
     width: 100%;
-    color:white;
+    color:black;
     margin-top: 15vh;
 }
 
 .content__img{
    
     border-radius: 80%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    /* Coloca la imagen en la pila de elementos en el orden correcto */
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.content__img.visible{
+    opacity: 1;
 }

@@ -1,4 +1,15 @@
 import "./ComponentBodySite.css";
+
+window.onload = function() {
+    // Encuentra la imagen por su clase
+    var img = document.querySelector('.content__img');
+    // Agrega la clase 'visible' para iniciar la transición
+    setTimeout(function() {
+      img.classList.add('visible');
+    }, 100);
+    //img.classList.add('visible');
+  };
+
 const ComponentBodySite = () => {
   return (
     <>
