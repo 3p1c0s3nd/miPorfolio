@@ -1,4 +1,5 @@
 import "./ComponentBodySite.css";
+import  funciones  from "../../funciones/funciones";
 
 window.onload = function() {
     // Encuentra la imagen por su clase
@@ -15,9 +16,9 @@ const ComponentBodySite = () => {
     <>
       <div className="content__body__principal">
         <div className="content__left flex flex-col">
-          <span>Programador</span>
+          <div className="content__programador" onClick={() => funciones.gotoLocation("#")} style={{cursor:"pointer"}}>Programador</div>
 
-          <span className="mt-64">Proyectos</span>
+          <span className="content__proyectos mt-64" onClick={() => funciones.gotoLocation("#")} style={{cursor:"pointer"}}>Proyectos</span>
         </div>
         <div className="content__center">
           <div className="content__left__img">
@@ -25,8 +26,8 @@ const ComponentBodySite = () => {
           </div>
         </div>
         <div className="content__right flex flex-col">
-          <span>Seguridad Web</span>
-          <span className="mt-64">Pentesting</span>
+          <div className="content__seguridad" onClick={() => funciones.gotoLocation("#")} style={{cursor:"pointer"}}>Seguridad Web</div>
+          <span className="content__pentesting mt-64" onClick={() => funciones.gotoLocation("#")} style={{cursor:"pointer"}}>Pentesting</span>
         </div>
       </div>
     </>

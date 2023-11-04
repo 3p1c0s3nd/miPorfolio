@@ -5,7 +5,6 @@ import ComponentParticle from './components/particles/ComponentParticle.jsx'
 import ComponentBodySite from './components/body/ComponentBodySite.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -14,7 +13,7 @@ function App() {
 
         <div className="content">
           <div className="main">
-          <ComponentMainSite />
+          <ComponentMainSite key="bien"/>
           </div>
           <div className='content__body'>
             <ComponentBodySite />

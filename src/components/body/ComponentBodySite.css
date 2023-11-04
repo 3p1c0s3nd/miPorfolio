@@ -21,3 +21,55 @@
 .content__img.visible{
     opacity: 1;
 }
+
+
+.content__programador, .content__proyectos{
+    font-size: 2.5rem;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el texto que no se muestra */
+    border-right: 2px solid transparent; 
+    animation: escribirIzquierdaDerecha 4s steps(40);
+}
+
+.content__seguridad, .content__pentesting{
+    
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: escribirIzquierdaDerecha 4s steps(40);
+    
+}
+
+
+
+
+
+@keyframes escribirIzquierdaDerecha {
+    0% {
+        width: 0;
+        color:brown;
+    }
+    100% {
+        width: 100%;
+        color: black;
+    }
+}
+
+
+@keyframes escribirDerechaIzquierda{
+    0% {
+        width: -100;
+        color:brown;
+    }
+    100% {
+        width: 0%;
+        color: black;
+    }
+   /* 0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }*/
+}
