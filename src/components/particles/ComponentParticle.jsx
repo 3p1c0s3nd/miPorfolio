@@ -24,7 +24,7 @@ const ComponentParticle = () => {
           zIndex: -1,
         },
         background: {
-          //image: "url('/assets/fondo.png')", // Ruta a la imagen de fondo
+          image: "url('/posiblefondo.png')", // Ruta a la imagen de fondo
           position: "50% 50%", // Posición del fondo
           size: "110% 100%",
           repeat: "repeat", // Evitar repetición
