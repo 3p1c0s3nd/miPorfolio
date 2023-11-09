@@ -13,3 +13,23 @@
     transform: translateX(-200%);
     z-index: 1;
 }
+
+
+.proyectos_mostrar{
+    transition: transform 0.10s;
+    transform: translateX(-10%);
+ 
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .proyectos_mostrar{
+        transition: transform 0.10s;
+        transform: translateX(-100%);
+    }
+}
+
+

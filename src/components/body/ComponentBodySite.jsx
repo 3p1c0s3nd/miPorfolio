@@ -16,21 +16,31 @@ window.onload = function() {
     //img.classList.add('visible');
   };
 
-  const handleBoton1 = (selector) => {
+  /*const handleBoton1 = (selector) => {
       document.querySelector(selector).style.transform = 'translateX(-10%)';
   }
 
   const handleBoton2 = (selector) => {
     document.querySelector(selector).style.transform = 'translateX(-10%)';
+}*/
+
+const handleBoton1 = (selector, nameclass) => {
+  if(document.querySelector(selector).classList.contains(nameclass)){
+    document.querySelector(selector).classList.remove(nameclass);
+  }else{
+    document.querySelector(selector).classList.add(nameclass);
+  }
 }
+  
+
 const ComponentBodySite = () => {
   return (
     <>
       <div className="content__body__principal">
         <div className="content__left flex flex-col">
-        <Programador/><div className="content__programador" onClick={() => handleBoton1(".programador")} style={{cursor:"pointer"}}>Programador</div>
+        <Programador/><div className="content__programador" onClick={() => handleBoton1(".programador", "programador_mostrar")} style={{cursor:"pointer"}}>Programador</div>
 
-        <Proyectos /><span className="content__proyectos " onClick={() => handleBoton1(".proyectos")} style={{cursor:"pointer"}}>Proyectos</span>
+        <Proyectos /><span className="content__proyectos " onClick={() => handleBoton1(".proyectos", "proyectos_mostrar")} style={{cursor:"pointer"}}>Proyectos</span>
         </div>
         <div className="content__center">
           <div className="content__left__img">
@@ -38,8 +48,8 @@ const ComponentBodySite = () => {
           </div>
         </div>
         <div className="content__right flex flex-col">
-         <SeguridadWeb /> <div className="content__seguridad " onClick={() => handleBoton2(".seguridadWeb")} style={{cursor:"pointer"}}>Seguridad Web</div>
-          <Pentesting /><span className="content__pentesting " onClick={() => handleBoton2(".pentesting")} style={{cursor:"pointer"}}>Pentesting</span>
+         <SeguridadWeb /> <div className="content__seguridad " onClick={() => handleBoton1(".seguridadWeb", "seguridadWeb_mostrar")} style={{cursor:"pointer"}}>Seguridad Web</div>
+          <Pentesting /><span className="content__pentesting " onClick={() => handleBoton1(".pentesting", "pentesting_mostrar")} style={{cursor:"pointer"}}>Pentesting</span>
         </div>
       </div>
     </>
