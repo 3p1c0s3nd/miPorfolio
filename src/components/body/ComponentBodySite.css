@@ -7,14 +7,25 @@
     margin-top: 15vh;
 }
 
+.content__left__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content__img{
    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
     border-radius: 80%;
     opacity: 0;
     transition: opacity 2s ease-in-out;
     /* Coloca la imagen en la pila de elementos en el orden correcto */
     position: relative;
-    z-index: 1;
+ 
     animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -29,6 +40,12 @@
     overflow: hidden; /* Oculta el texto que no se muestra */
     border-right: 2px solid transparent; 
     animation: escribirIzquierdaDerecha 4s steps(40);
+
+   
+}
+
+.content__proyectos, .content__pentesting{
+    padding-top: 100%;
 }
 
 .content__seguridad, .content__pentesting{
@@ -72,4 +89,60 @@
     100% {
         transform: translateX(0);
     }*/
+}
+
+
+
+
+@media (max-width: 768px) {
+  
+
+    .content__proyectos, .content__seguridad, .content__pentesting, .content__programador{
+        font-size: 3.2rem;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid transparent;
+        padding-top: 5%;
+        padding-bottom: 20%; 
+        margin-right: 0%;
+        white-space: nowrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content__body__principal{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 100%;
+        color:black;
+        margin-top: 15vh;
+    }
+       
+
+    .content__img{
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        border-radius: 80%;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        /* Coloca la imagen en la pila de elementos en el orden correcto */
+        position: relative;
+     
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+    
+    .content__img.visible{
+        opacity: 1;
+    }
+        /* Ajustar el tamaño de fuente para dispositivos más pequeños */
+    
+
+
 }
