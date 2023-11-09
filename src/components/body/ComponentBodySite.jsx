@@ -48,7 +48,7 @@ const ComponentBodySite = () => {
           </div>
         </div>
         <div className="content__right flex flex-col">
-         <SeguridadWeb /> <div className="content__seguridad " onClick={() => handleBoton1(".seguridadWeb", "seguridadWeb_mostrar")} style={{cursor:"pointer"}}>Seguridad Web</div>
+         <SeguridadWeb /> <div className="content__seguridad " onClick={() => handleBoton1(".seguridadWeb", "seguridadWeb_mostrar")} style={{cursor:"pointer"}}>Mis Habilidades</div>
           <Pentesting /><span className="content__pentesting " onClick={() => handleBoton1(".pentesting", "pentesting_mostrar")} style={{cursor:"pointer"}}>Pentesting</span>
         </div>
       </div>
