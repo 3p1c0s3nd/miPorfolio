@@ -44,10 +44,14 @@
    
 }
 
-.content__proyectos, .content__pentesting{
-    padding-top: 100%;
+.content__proyectos{
+    padding-top: 80%;
 }
 
+
+.content__pentesting{
+    padding-top: 70%;
+}
 .content__seguridad, .content__pentesting{
     
     font-size: 2.5rem;

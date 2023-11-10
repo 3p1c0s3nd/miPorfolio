@@ -5,7 +5,7 @@
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 100%;
     width: 100%;
     color:white;

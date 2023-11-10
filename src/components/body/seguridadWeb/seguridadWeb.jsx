@@ -18,8 +18,8 @@ const SeguridadWeb = () => {
       <div className="flex gap-32">
         
         <div>
-        <h1>Mis Habilidades</h1>
-          <ul>
+        <h1 className="text-3xl m-10">Mis Habilidades</h1>
+          <ul className="text-2xl flex flex-col gap-4">
             <li className="text-2xl">Hacking Etico</li>
             <li className="text-2xl">Seguridad Informática</li>
             <li className="text-2xl">Ciberseguridad</li>
@@ -33,8 +33,8 @@ const SeguridadWeb = () => {
         </div>
 
         <div>
-        <h1>Herramientas que Uso</h1>
-          <ul>
+        <h1 className="text-3xl m-10">Herramientas que Uso</h1>
+          <ul className="text-2xl flex flex-col gap-4">
             <li className="text-2xl">Burp Suite y OwaspZap</li>
             <li className="text-2xl">Acunetix y Netsparket</li>
             <li className="text-2xl">Immunity Debugger</li>
