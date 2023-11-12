@@ -13,7 +13,7 @@ const Programador = () =>{
     return(
         <div className="programador" onClick={() => handleBoton(".programador") } style={{cursor:"pointer"}}>
                 <div className="programador__contenedor flex flex-row">
-                    <h1 className="programador__sobremi mt-20 mr-20 text-3xl">Sobre Mi</h1>
+                    <h1 className="programador__sobremi mt-20 mr-20 text-3xl font-bold">Sobre Mi</h1>
 
                     <h2 className="programador__descripcion"><p>Soy un apasionado por la
 seguridad informática y la

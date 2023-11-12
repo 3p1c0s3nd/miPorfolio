@@ -12,14 +12,14 @@ const Proyectos = () => {
 
   return (
     <div className="proyectos" onClick={() => handleBoton(".proyectos")}>
-      <h1 className="mr-10">Mis Proyectos</h1>
-      <div className="proyectos__contenedor">
       
+      <div className="proyectos__contenedor">
+      <h1 className="mr-10 pt-24 pl-10 text-3xl font-bold">Mis Proyectos</h1>
         <ul>
-          <li className="text-2xl p-4">Fortune Cookies --- <a href="https://github.com/3p1c0s3nd/fortune-cookies"> https://github.com/3p1c0s3nd/fortune-cookies</a></li>
-          <li className="text-2xl p-4">Weather App --- <a href="https://github.com/3p1c0s3nd/AplicacionClima"> https://github.com/3p1c0s3nd/AplicacionClima</a></li>
-          <li className="text-2xl p-4">UseApi Rick and Morty --- <a href="https://github.com/3p1c0s3nd/RickandMortyUseApi"> https://github.com/3p1c0s3nd/RickandMortyUseApi</a></li>
-          <li className="text-2xl p-4">Pentesting</li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Fortune Cookies</span>  <a href="https://github.com/3p1c0s3nd/fortune-cookies"> https://github.com/3p1c0s3nd/fortune-cookies</a></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Weather App</span>  <a href="https://github.com/3p1c0s3nd/AplicacionClima"> https://github.com/3p1c0s3nd/AplicacionClima</a></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">UseApi Rick and Morty</span>  <a href="https://github.com/3p1c0s3nd/RickandMortyUseApi"> https://github.com/3p1c0s3nd/RickandMortyUseApi</a></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Pentesting</span></li>
         </ul>
        
    
