@@ -38,6 +38,7 @@ const ComponentBodySite = () => {
       <div className="content__body__principal">
         <div className="content__left flex flex-col">
           <Programador />
+          <Proyectos />
           <div
             className="content__programador"
             onClick={() => handleBoton1(".programador", "programador_mostrar")}
@@ -46,7 +47,7 @@ const ComponentBodySite = () => {
             Programador
           </div>
 
-          <Proyectos />
+          
           <span
             className="content__proyectos "
             onClick={() => handleBoton1(".proyectos", "proyectos_mostrar")}
@@ -59,7 +60,8 @@ const ComponentBodySite = () => {
           <img className="content__img max-[600px]:w-[300px] max-[600px]:h-[600px] " src="./propia.png" />
         </div>
         <div className="content__right flex flex-col">
-          <SeguridadWeb />{" "}
+          <SeguridadWeb />
+          <Pentesting />
           <div
             className="content__seguridad "
             onClick={() =>
@@ -69,7 +71,7 @@ const ComponentBodySite = () => {
           >
             Mis Habilidades
           </div>
-          <Pentesting />
+         
           <span
             className="content__pentesting "
             onClick={() => handleBoton1(".pentesting", "pentesting_mostrar")}
