@@ -2,7 +2,6 @@
     max-width: 100%;
     max-height: 100%;
     width: 100%;
-    height: 100vh;
     position: absolute;
     transition: transform 0.5s;
     display: flex;
@@ -12,28 +11,74 @@
     background-color: #f0f0f0;
     animation: programadorFadeOut 1s ease-in-out forwards;
     z-index: 1;
-    background-image:url(../fondodiv.png);
+}
+
+
+.programador_mostrar{
+    animation: programadorFadeIn 1s ease-in-out forwards;
+}
+
+
+.programador__descripcion{
+    
+}
+
+
+.programador__contenedor{
+    padding: 100px;
+    background-image: url(../fondodiv.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-.programador_mostrar{
-   /* transition: transform 0.10s;
-    transform: translateX(-10%);*/
-    animation: programadorFadeIn 1s ease-in-out forwards;
+
+
+
+@media (max-width: 468px) {
+
+    .programador_mostrar{
+        animation: programadorFadeInMovil 1s ease-in-out forwards;
+    }
+
+    .programador__descripcion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .programador__contenedor{
+        
+        border: 2px solid black;
+        background-image: url(../fondodiv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+     
+    }
+
+    .programador{
+        margin-top: 100px;
+    }
 }
+
+
+
+
+
+
 
 
 @keyframes programadorFadeOut{
     0% {
         opacity: 1;
         transform: translateX(0%);
+        position:absolute;
     }
     100% {
         opacity: 0;
         transform: translateX(-80%);
         display: none;
+        position:absolute;
     }
 }
 
@@ -43,10 +88,13 @@
     0% {
         opacity: 0;
         transform: translateX(-30%);
+        position:absolute;
     }
     100% {
         opacity: 1;
         transform: translateX(0%);
+        position:absolute;
+        
     }
 }
 
@@ -66,38 +114,10 @@
 @keyframes programadorFadeInMovil{
     0% {
         opacity: 0;
-        transform: translateX(-10%);
+        transform: translateX(-20%);
     }
     100% {
         opacity: 1;
-        transform: translateX(-30%);
+        transform: translateX(-10%);
     }
 }
-
-.programador__contenedor{
-    width: 600px;
-}
-
-
-
-
-
-@media (max-width: 768px) {
-
-    .programador_mostrar{
-        animation: programadorFadeInMovil 1s ease-in-out forwards;
-    }
-
-    /*.programador{
-        animation: programadorFadeOutMovil 1s ease-in-out forwards;
-    }*/
-}
-
-/*
-@media (min-width: 1200px) {
-
-    .programador_mostrar{
-        transition: transform 0.10s;
-        transform: translateX(0%);
-    }
-}*/

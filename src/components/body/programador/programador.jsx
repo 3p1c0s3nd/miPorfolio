@@ -11,11 +11,12 @@ const Programador = () =>{
       }
 
     return(
-        <div className="programador" onClick={() => handleBoton(".programador") } style={{cursor:"pointer"}}>
-                <div className="programador__contenedor flex flex-row">
-                    <h1 className="programador__sobremi mt-20 mr-20 text-3xl font-bold">Sobre Mi</h1>
-
-                    <h2 className="programador__descripcion"><p>Soy un apasionado por la
+        <div className="programador content" onClick={() => handleBoton(".programador") } style={{cursor:"pointer"}}>
+                <div className="programador__contenedor">
+                  
+                    <div className="programador__descripcion">
+                    <h1 className="programador__sobremi text-3xl font-bold mt-10 mb-10">Sobre Mi</h1>
+                      <p className=''>Soy un apasionado por la
 seguridad informática y la
 programación, con varios
 años de experiencia en el
@@ -36,7 +37,7 @@ soluciones innovadoras para
 proteger la información y los
 sistemas.
 </p>
-</h2>
+</div>
                   </div>
         </div>
     );

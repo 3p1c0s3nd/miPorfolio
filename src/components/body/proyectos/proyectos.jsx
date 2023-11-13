@@ -1,5 +1,5 @@
 import "./proyectos.css";
-
+import  funciones  from "../../../funciones/funciones";
 const Proyectos = () => {
   
   const handleBoton = (selector) => {
@@ -14,12 +14,12 @@ const Proyectos = () => {
     <div className="proyectos" onClick={() => handleBoton(".proyectos")}>
       
       <div className="proyectos__contenedor">
-      <h1 className="mr-10 pt-24 pl-10 text-3xl font-bold">Mis Proyectos</h1>
+      <h1 className=" text-center  text-3xl font-bold mt-32 misproyectos">Mis Proyectos</h1>
         <ul>
-          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Fortune Cookies</span>  <a href="https://github.com/3p1c0s3nd/fortune-cookies"> https://github.com/3p1c0s3nd/fortune-cookies</a></li>
-          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Weather App</span>  <a href="https://github.com/3p1c0s3nd/AplicacionClima"> https://github.com/3p1c0s3nd/AplicacionClima</a></li>
-          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">UseApi Rick and Morty</span>  <a href="https://github.com/3p1c0s3nd/RickandMortyUseApi"> https://github.com/3p1c0s3nd/RickandMortyUseApi</a></li>
-          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">Pentesting</span></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold" onClick={() => funciones.gotoLocation("https://galleta-de-la-fortuna-pi.vercel.app/")} style={{cursor:"pointer"}}>Fortune Cookies</span> <p >https://galleta-de-la-fortuna-pi.vercel.app/</p> </li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold" onClick={() => funciones.gotoLocation("https://aplicacion-clima-ten.vercel.app/")} style={{cursor:"pointer"}}>Weather App</span>  <p >https://aplicacion-clima-ten.vercel.app/</p></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold" onClick={() => funciones.gotoLocation("https://rickand-morty-use-api.vercel.app/")} style={{cursor:"pointer"}}>UseApi Rick and Morty</span>  <p >https://rickand-morty-use-api.vercel.app/</p></li>
+          <li className="text-2xl p-4 flex flex-col"><span className="text-3xl font-bold">....</span></li>
         </ul>
        
    
