@@ -1,16 +1,21 @@
 .proyectos{
-    max-width: 100%;
+    position: fixed;
+    top: -5vh;
+    z-index: 3;
+    width: 95%;
+    height: 100vh;
     max-height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: transform 0.5s;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     background-color: #f0f0f0;
-    animation: programadorFadeOut 1s ease-in-out forwards;
-    z-index: 1;
+    overflow: auto;
+    background-image: url(../fondodiv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: proyectosFadeOut 1s ease-in-out forwards;
 }
 
 .proyectos__contenedor{
@@ -18,30 +23,20 @@
     display: flex;
     flex-direction: row;
     padding: 0px 100px 0px 100px; 
-    height: 80vh;
-    max-height: 100%;
-    padding-top: 100px;
     /*border: 2px solid black;*/
 }
 
 
 .proyectos_mostrar{
     animation: proyectosFadeIn 1s ease-in-out forwards;
-    background-image: url(../fondodiv.png);
-    background-repeat: no-repeat;
-    background-size: cover;
- 
 }
 
-.misproyectos{
-
-}
 
 
 @keyframes proyectosFadeOut{
     0% {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(-10%);
     }
     100% {
         opacity: 0;
@@ -59,7 +54,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(-10%);
     }
 }
 
@@ -82,11 +77,11 @@
 @keyframes proyectosFadeInMovil{
     0% {
         opacity: 0;
-        transform: translateX(-10%);
+        transform: translateX(0%);
     }
     100% {
         opacity: 1;
-        transform: translateX(-30%);
+        transform: translateX(-10%);
     }
 }
 
@@ -95,19 +90,17 @@
 @media (max-width: 768px) {
 
     .proyectos_mostrar{
-        animation: programadorFadeInMovil 1s ease-in-out forwards;
+        animation: proyectosFadeInMovil 1s ease-in-out forwards;
     }
 
-    .misproyectos{
-        padding-top: 0px;
-        padding-bottom: 50px;
-        /*animation: programadorFadeOutMovil 1s ease-in-out forwards;*/
-    }
 
     .proyectos__contenedor{
         display: flex;
         flex-direction: column;
         width: 600px;
-        padding: 0px;
+    }
+
+    .proyectos{
+        width: 100%;
     }
 }

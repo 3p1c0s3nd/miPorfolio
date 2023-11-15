@@ -3,8 +3,16 @@ import './App.css'
 import ComponentMainSite from './components/header/ComponentMainSite.jsx'
 import ComponentParticle from './components/particles/ComponentParticle.jsx'
 import ComponentBodySite from './components/body/ComponentBodySite.jsx'
+import { useSelector } from 'react-redux'
 
 function App() {
+
+  //Nos permite acceder al store
+  useSelector((states) => {
+    
+  })
+
+
 
   return (
     <>

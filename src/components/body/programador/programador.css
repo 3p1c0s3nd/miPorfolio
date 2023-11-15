@@ -1,16 +1,23 @@
+
 .programador{
-    max-width: 100%;
+    position: fixed;
+    top: -5vh;
+    z-index: 3;
+    width: 95%;
+    height: 100vh;
     max-height: 100%;
-    width: 100%;
-    position: absolute;
+    background-color: #f0f0f0;
     transition: transform 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     background-color: #f0f0f0;
+    overflow: auto;
+    background-image: url(../fondodiv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: programadorFadeOut 1s ease-in-out forwards;
-    z-index: 1;
 }
 
 
@@ -18,47 +25,22 @@
     animation: programadorFadeIn 1s ease-in-out forwards;
 }
 
-
-.programador__descripcion{
-    
-}
-
-
 .programador__contenedor{
-    padding: 100px;
-    background-image: url(../fondodiv.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 80px;
+
+    scroll-behavior:unset;
 }
 
 
-
-
-
-@media (max-width: 468px) {
+@media (max-width: 768px) {
 
     .programador_mostrar{
         animation: programadorFadeInMovil 1s ease-in-out forwards;
-    }
-
-    .programador__descripcion{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .programador__contenedor{
+        max-height: 100%;
+        padding-top: 80vh;
         
-        border: 2px solid black;
-        background-image: url(../fondodiv.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-     
     }
 
-    .programador{
-        margin-top: 100px;
-    }
 }
 
 
@@ -71,7 +53,7 @@
 @keyframes programadorFadeOut{
     0% {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(-10%);
         position:absolute;
     }
     100% {
@@ -92,7 +74,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(-10%);
         position:absolute;
         
     }

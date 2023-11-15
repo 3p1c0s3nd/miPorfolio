@@ -13,16 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 70%;
+    width: 30%;
+    height: 30%;
     border-radius: 80%;
     opacity: 0;
     transition: opacity 4s ease-in-out;
-    /* Coloca la imagen en la pila de elementos en el orden correcto */
     -webkit-border-radius:50%;
     box-shadow: rgb(0,0,0,0.5) 0px 0px 33px;
-    position: relative;
- 
+    position: fixed;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -94,12 +92,6 @@
         width: 0%;
         color: black;
     }
-   /* 0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }*/
 }
 
 
@@ -140,11 +132,11 @@
         justify-content: center;
         align-items: center;
         width: 40%;
+        height: 40%;
         border-radius: 80%;
         opacity: 0;
         transition: opacity 2s ease-in-out;
-        /* Coloca la imagen en la pila de elementos en el orden correcto */
-        position: relative;
+        position: fixed;
      
         animation: fadeIn 1s ease-in-out forwards;
     }
