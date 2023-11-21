@@ -44,7 +44,7 @@ const ComponentBodySite = () => {
             onClick={() => handleBoton1(".programador", "programador_mostrar")}
             style={{ cursor: "pointer" }}
           >
-            Programador
+            Sobre mi
           </div>
 
           

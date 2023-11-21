@@ -21,12 +21,12 @@ const ComponentParticle = () => {
             zIndex: -1,
           },
           background: {
-            image: "url('/fondogif.gif')", // Ruta a la imagen de fondo
-            position: '50% 50%', // Posición del fondo
+            image: "url('/fondogif.gif')",
+            position: '50% 50%',
             size: '110% 100%',
-            repeat: 'repeat', // Evitar repetición
+            repeat: 'repeat',
             color: {
-              value: '#FFFFFF', // Color de fondo blanco
+              value: '#FFFFFF',
             },
           },
           fpsLimit: 60,
@@ -56,14 +56,14 @@ const ComponentParticle = () => {
           },
           particles: {
             color: {
-              value: '#000', // Color de las partículas (negro)
+              value: '#000',
             },
             links: {
               color: '#0f0',
               distance: 150,
               enable: true,
               opacity: 0.5,
-              width: 1,
+              width: 0.5, // Ajusta el ancho de los enlaces
             },
             collisions: {
               enable: true,
@@ -79,19 +79,19 @@ const ComponentParticle = () => {
             number: {
               density: {
                 enable: true,
-                value_area: 800, // Cambia esto para ajustar la densidad
+                value_area: 800,
               },
-              value: 80, // Cantidad de partículas
+              value: 50, // Ajusta la cantidad de partículas
             },
             opacity: {
-              value: 0.5,
+              value: 0.2, // Ajusta la opacidad
             },
             shape: {
               type: 'circle',
             },
             size: {
-              min: 1,
-              value: 5,
+              min: 0.5, // Ajusta el tamaño mínimo
+              value: 3, // Ajusta el tamaño máximo
             },
           },
           detectRetina: true,
